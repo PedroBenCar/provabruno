@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>provadobruno2</title>
+</head>
+    <body>
+        <script>
+            let salafrario = 3000
+            let ajust = 0 
+            if (salafrario < 0 ) {
+                console.log("valor impossivel")
+            }
+            if (salafrario > 0 && salafrario < 2000) {
+                ajust = 0.15
+            }
+            if (salafrario >= 2000 && sal < 4000) {
+                ajust = 0.15
+            }
+            if (salafrario > 4000) {
+                ajust = 0.10
+            }
+            let salafrariodepois = salafrario + (salafrario + ajust)
+            let quantiaajust = salafrario * ajust
+            console.log (`Novo salário: ${salafrariodepois} reais.`)
+            console.log (`Novo ajust: ${quantiaajust} reais.`)
+            console.log (`indice ajuste: ${indajust} reais.`)
+        </script>
+    </body>
+</html>
